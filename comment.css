@@ -19,7 +19,7 @@ section{
     overflow-y: scroll;
     height: 100vh;
 }
-.one , .two , .three{
+.one , .two , .three , .five , .six , .seven , .eight{
   display: grid; 
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(8, 1fr);
