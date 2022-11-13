@@ -45,7 +45,7 @@ section{
     grid-area: 2 / 7 / 3 / 8;
     font-size: 40px;
     color: orange;
-    margin-right: 10vh;
+
 }
 
 .img-left{
@@ -64,10 +64,10 @@ section{
 }
 
 .day-right{
-    grid-area: 3 / 6 / 4 / 8;
+    grid-area: 3 / 7 / 4 / 8;
     font-size: 30px;
     color: gray;
-    margin-left: 22vh;
+
 }
 
 .text-left{
@@ -78,9 +78,9 @@ section{
 
 .text-right{
     grid-area: 4 / 5 / 6 / 8;
-    margin-right: 15vh;
+
     font-size: 20px;
-    text-align: end;
+
 }
 
 .insta-logo-left{
@@ -151,6 +151,23 @@ nav{
     
 }
 
+@media screen and (min-width:768px){
+
+    .title-right{
+        margin-right: 14vh;
+    }
+
+    .day-right{
+        text-align: end;
+        margin-right: 14vh;
+    }
+    
+    .text-right{
+        margin-right: 15vh;
+        text-align: end;
+    }
+}
+
 /* faire passer le menu sous les 3 traits en mode mobile*/ 
 @media screen and (max-width:768px) {
     
@@ -158,25 +175,31 @@ nav{
     .one , .two , .three , .four{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(9, 1fr);
+        grid-template-rows: repeat(6, 1fr);
         grid-column-gap: 0px;
         grid-row-gap: 0px;
     }
 
-    .title1 , .title2 , .title3 , .title4{ 
-        grid-area: 1 / 1 / 3 / 3; 
-        font-size: 24px;
-        color: orange;
+    .img-left , .img-right{
+        grid-area: 1 / 1 / 3 / 4;
+        opacity: 0;
+    }
+
+    .title-left , .title-right{ 
+        grid-area: 3 / 1 / 4 / 2; 
         margin-left: 10vh;
         }
-    .big1 , .big2{ 
-        grid-area: 4 / 1 / 6 / 4; 
-        font-size: 36px;
+    .day-left , .day-right{ 
+        grid-area: 4 / 1 / 5 / 2;
+        margin-left: 10vh;
         }
-    .small1 , .small2{ 
-        grid-area: 7 / 1 / 10 / 4;
-        font-size: 18px;
-        color: gray;
+    .text-left , .text-right{ 
+        grid-area: 5 / 1 / 7 / 4;
+        margin-left: 10vh;
+    }
+
+    .insta-logo-left , .insta-logo-right {
+        grid-area: 4 / 2 / 5 / 3;
     }
     
     
@@ -188,7 +211,7 @@ nav{
         right: 0px;
         height: 92vh;
         top: 8vh;
-        background-color: black;
+        background-color: ghostwhite;
         display: flex;
         flex-direction: column; 
         align-items:center;
